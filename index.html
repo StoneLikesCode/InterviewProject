@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- [if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif] -->
+<html>
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A user registration website showcasing SEO and JavaScript skills for EBSCO.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>User Registration</title>
+        
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "website",
+                "name": "User Registration Site",
+                "description": "A site where users can register their name and email and see a list of registered users"
+            }
+        </script>
+        
+        <!-- Styling -->
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <!-- Register user form -->
+        <h1>Register a User</h1>
+        <h2 id="feedback"></h2>
+        <form id="user-form"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Registered users list -->
+        <h2>Registered Users</h2>
+        <ul id="user-list"></ul>
+        
+        <!-- Java Script -->
+        <script src="app.js" async defer></script>
+
+    </body>
+</html>
